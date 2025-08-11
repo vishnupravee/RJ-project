@@ -1,0 +1,73 @@
+.case-signal-page {
+  padding: 50px;
+  background:black;
+  color: white;
+  text-align: center;
+}
+
+.case-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.case-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.case-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.case-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.case-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.case-icon {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.case-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.case-card h4 {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.case-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.case-meta {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.case-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 255, 204, 0.4);
+}

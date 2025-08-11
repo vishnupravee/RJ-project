@@ -1,0 +1,50 @@
+/* src/components/NavbarCustom.css */
+.navbar-custom {
+  background: rgba(10, 10, 25, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-animated {
+  position: relative;
+  color: #fff !important;
+  margin: 0 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-animated::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #00c6ff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-animated:hover {
+  color: #00c6ff !important;
+}
+
+.nav-animated:hover::after {
+  width: 100%;
+}
+
+/* Toggler animation */
+.toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.toggler:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,135 @@
+/* ContactPage.css */
+
+/* Page container */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 60px 20px;
+  background: black;
+  color: #fff;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Contact details section */
+.contact-details {
+  flex: 1;
+  background:black;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.contact-details h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-details p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.contact-details i {
+  color: #38bdf8;
+  margin-right: 10px;
+}
+
+/* Contact form section */
+.contact-form {
+  flex: 1.5;
+  background: black;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  animation: slideInRight 1s ease-in-out;
+}
+
+.contact-form h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-form label {
+  font-weight: 500;
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-details, .contact-form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+/* .neural-lab-container {
+  background: black;
+  color: white;
+  max-width: 100%;  
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #00f2fe;
+}
+
+.tip-text {
+  font-size: 0.95rem;
+  opacity: 0.8;
+} */
+.neural-lab-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #0d0d0d;
+  color: white;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.mode-buttons button {
+  padding: 8px 16px;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mode-buttons button:hover {
+  background: #444;
+}
+
+.model-viewer {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.tip {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
