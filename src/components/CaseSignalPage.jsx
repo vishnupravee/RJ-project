@@ -39,7 +39,7 @@ const CaseSignalPage = () => {
   ];
 
   return (
-    <div className="case-signal-page">
+    <div className="case-signal-page" id="casesignals">
       <h1 className="case-title">Case Signals</h1>
       <div className="case-card-container">
         {caseSignals.map((signal, index) => (

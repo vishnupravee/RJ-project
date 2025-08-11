@@ -25,7 +25,7 @@ const services = [
 
 export default function ServicePage() {
   return (
-    <div className="service-container">
+    <div className="service-container" id="services">
       <h2 className="service-title">AI-Powered Social Media Engines
 </h2>
       <div className="service-grid">

@@ -213,7 +213,7 @@ export default function NeuralLabPage() {
   ];
 
   return (
-    <div className="neural-lab-container">
+    <div className="neural-lab-container" id="ailab">
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}

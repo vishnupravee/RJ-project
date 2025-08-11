@@ -62,7 +62,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import { FaCheckCircle } from "react-icons/fa";
-import homepageVideo from "../asset/RJ DIGITAL AI LOGO ANIMATION.mp4";
+import homepageVideo from "../asset/RJ DIGITAL AI LOGO ANIMATION wbg.mp4";
 const words = [
   "AI", "Machine Learning", "Neural Networks", "Deep Learning", "Automation",
   "Data Science", "Natural Language Processing", "Vision AI", "Robotics",
@@ -109,7 +109,10 @@ const HomePage = () => {
           From Thalassery to the world — we design self-optimizing campaigns powered by neural intelligence.
         </p>
         <div className="homepage-buttons">
-  <button className="animated-btn primary-btn">Book a strategy call</button>
+  <button className="animated-btn primary-btn" onClick={() => {
+    window.location.href = "tel:‪+911234567890‬"; // Replace with your number
+  }}
+>Book a strategy call</button>
   <button className="animated-btn outline-btn">See case signals</button>
 </div>
 
