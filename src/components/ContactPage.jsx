@@ -57,7 +57,7 @@ const ContactPage = () => {
               <label className="block mb-2 font-medium">Message</label>
               <textarea
                  id="message"
-                  value={message}
+                 
                 className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
                 placeholder="Your Message"
               ></textarea>
