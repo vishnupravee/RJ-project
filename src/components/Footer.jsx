@@ -50,9 +50,27 @@ const Footer = () => {
           <Col md={2} className="footer-social">
             <h5>Follow Us</h5>
             <div className="social-icons">
-              <a href="#" className="social-link"><FaFacebookF /></a>
-              <a href="#" className="social-link"><FaInstagram /></a>
-              <a href="#" className="social-link"><FaLinkedinIn /></a>
+             
+              <button  className="social-link"
+  onClick={() => window.open("", "_blank")}
+>
+  <FaFacebookF />
+</button>
+              
+              <button  className="social-link"
+  onClick={() => window.open("https://www.instagram.com/rjatlasdigitalai_?igsh=OGI0cXo4eXV1Z3Rt", "_blank")}
+>
+ <FaInstagram />
+</button>
+             
+
+               <button  className="social-link"
+  onClick={() => window.open("https://www.linkedin.com/company/rjatlasjewllery/", "_blank")}
+>
+ <FaLinkedinIn />
+</button>
+
+
             </div>
           </Col>
         </Row>

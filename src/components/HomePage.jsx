@@ -63,6 +63,9 @@ import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import { FaCheckCircle } from "react-icons/fa";
 import homepageVideo from "../asset/RJ DIGITAL AI LOGO ANIMATION wbg.mp4";
+import Assistent from "./Assistent";
+import { Link } from "react-router-dom";
+
 const words = [
   "AI", "Machine Learning", "Neural Networks", "Deep Learning", "Automation",
   "Data Science", "Natural Language Processing", "Vision AI", "Robotics",
@@ -71,6 +74,7 @@ const words = [
 ];
 
 const HomePage = () => {
+   
   const [wordPositions, setWordPositions] = useState([]);
 
   useEffect(() => {
@@ -110,10 +114,12 @@ const HomePage = () => {
         </p>
         <div className="homepage-buttons">
   <button className="animated-btn primary-btn" onClick={() => {
-    window.location.href = "tel:‪+911234567890‬"; // Replace with your number
+    window.location.href = "tel:‪+919526224999‬"; // Replace with your number
   }}
 >Book a strategy call</button>
-  <button className="animated-btn outline-btn">See case signals</button>
+<Link to="/casesignals">
+  <button  className="animated-btn outline-btn">See case signals</button>
+  </Link>
 </div>
 
          <div className="certifications">
@@ -133,7 +139,9 @@ const HomePage = () => {
           className="homepage-video"
         />
       </div>
+      <Assistent />
     </div>
+      
   );
 };
 

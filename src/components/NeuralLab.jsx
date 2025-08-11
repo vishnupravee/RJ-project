@@ -213,7 +213,7 @@ export default function NeuralLabPage() {
   ];
 
   return (
-    <div className="neural-lab-container" id="ailab">
+    <div className="neural-lab-container pt-3" id="ailab">
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -223,6 +223,7 @@ export default function NeuralLabPage() {
       </motion.h1>
 
       <motion.p
+      className="pt-3"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
