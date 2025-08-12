@@ -3,12 +3,19 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavbarCustom.css";
+import homelogo from "../asset/rj_digital_ai-removebg-preview.png";
 
 const NavbarCustom = () => {
   return (
     <Navbar expand="lg" fixed="top" className="navbar-custom">
       <Container>
         <Navbar.Brand href="/" className="brand-text">
+        <img
+  src={homelogo}
+    width="40"
+    height="40"
+    className="d-inline-block align-top me-2"
+  />
           RJ ATLAS DIGITAL AI
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />

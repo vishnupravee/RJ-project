@@ -4,7 +4,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 const ContactPage = () => {
 
    const [message, setMessage] = useState('');
-  const RECIPIENT_EMAIL = 'vishnuppullanatt@gmail.com';
+  const RECIPIENT_EMAIL = 'rjatlasdigitalai@gmail.com';
   const handleOpenEmail = () => {
 
     const encodedMessage = encodeURIComponent(message);
@@ -120,96 +120,3 @@ export default ContactPage;
 
 
 
-// import React, { useState } from 'react';
-
-// // Define the recipient email address as a constant
-// const RECIPIENT_EMAIL = 'vishnuppullanatt@gmail.com';
-
-// function ContactPage() {
-//   const [message, setMessage] = useState('');
-
-//   const handleOpenEmail = () => {
-//     const encodedMessage = encodeURIComponent(message);
-//     const mailtoLink = `mailto:${RECIPIENT_EMAIL}?body=${encodedMessage}`;
-//     window.location.href = mailtoLink;
-//   };
-
-//   return (
-//     <div style={{ color: 'white', backgroundColor: '#111', padding: '20px', borderRadius: '8px' }}>
-//       <h3>Contact Support</h3>
-//       <textarea
-//         rows="5"
-//         cols="50"
-//         value={message}
-//         onChange={(e) => setMessage(e.target.value)}
-//         placeholder="Enter your message here..."
-//         style={{ width: '100%', padding: '10px', marginBottom: '10px', backgroundColor: '#222', color: 'white', border: '1px solid #555' }}
-//       />
-//       <br />
-//       <button
-//         onClick={handleOpenEmail}
-//         style={{
-//           backgroundColor: '#007bff',
-//           color: 'white',
-//           padding: '10px 20px',
-//           border: 'none',
-//           borderRadius: '5px',
-//           cursor: 'pointer'
-//         }}
-//       >
-//         Email Support
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default  ContactPage;
-
-
-
-
-
-// import React, { useState } from "react";
-// import emailjs from "emailjs-com";
-
-// export default function ContactPage() {
-//   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-//   const [status, setStatus] = useState("");
-
-//   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .send(
-//         "service_jv9vr5t",      // from EmailJS
-//         "template_izba3sg",     // from EmailJS
-//         formData,
-//         "522oF651oPX79U6bz"       // from EmailJS
-//       )
-//       .then(
-//         () => {
-//           setStatus("✅ Email sent successfully!");
-//         },
-//         (error) => {
-//           setStatus("❌ Failed to send email.");
-//           console.error(error);
-//         }
-//       );
-//   };
-
-//   return (
-//     <div>
-//       <form onSubmit={handleSubmit}>
-//         <input name="name" placeholder="Your Name" onChange={handleChange} />
-//         <input name="email" type="email" placeholder="Your Email" onChange={handleChange} />
-//         <textarea name="message" placeholder="Your Message" onChange={handleChange}></textarea>
-//         <button type="submit">Send</button>
-//       </form>
-//       {status && <p>{status}</p>}
-//     </div>
-//   );
-// }
