@@ -19,7 +19,7 @@ const NavbarCustom = () => {
           RJ ATLAS DIGITAL AI
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto">
             <Nav.Link href="#services" className="nav-animated">Services</Nav.Link>
             <Nav.Link href="#casesignals" className="nav-animated">CaseSignals</Nav.Link>

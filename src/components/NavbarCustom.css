@@ -42,7 +42,8 @@
 /* Toggler animation */
 .toggler {
   border: none;
-  background: transparent !important;
+  background-color: rgb(73, 72, 72);
+  /* background: transparent !important; */
 }
 
 .toggler:focus {
